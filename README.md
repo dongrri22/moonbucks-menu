@@ -51,21 +51,15 @@
 - [ ] 메뉴 삭제 버튼을 이용하여 메뉴 삭제할 수 있다.
   - [ ] 메뉴 삭제시 브라우저에서 제공하는 `confirm` 인터페이스를 활용한다.
 - [ ] 총 메뉴 갯수를 count하여 상단에 보여준다.
-- 추가되는 메뉴의 아래 마크업은 `<ul id="espresso-menu-list" class="mt-3 pl-0"></ul>` 안에 삽입해야 한다.
+- 추가되는 메뉴의 아래 마크업은 `<ul id="-menu-list" class="mt-3 pl-0"></ul>` 안에 삽입해야 한다.
 
 ```js
 <li class="menu-list-item d-flex items-center py-2">
   <span class="w-100 pl-2 menu-name">${name}</span>
-  <button
-    type="button"
-    class="bg-gray-50 text-gray-500 text-sm mr-1 menu-edit-button"
-  >
+  <button type="button" class="bg-gray-50 text-gray-500 text-sm mr-1 menu-edit-button">
     수정
   </button>
-  <button
-    type="button"
-    class="bg-gray-50 text-gray-500 text-sm menu-remove-button"
-  >
+  <button type="button" class="bg-gray-50 text-gray-500 text-sm menu-remove-button">
     삭제
   </button>
 </li>
@@ -82,22 +76,13 @@
 ```js
 <li class="menu-list-item d-flex items-center py-2">
   <span class="w-100 pl-2 menu-name sold-out">${name}</span>
-  <button
-    type="button"
-    class="bg-gray-50 text-gray-500 text-sm mr-1 menu-sold-out-button"
-  >
+  <button type="button" class="bg-gray-50 text-gray-500 text-sm mr-1 menu-sold-out-button">
     품절
   </button>
-  <button
-    type="button"
-    class="bg-gray-50 text-gray-500 text-sm mr-1 menu-edit-button"
-  >
+  <button type="button" class="bg-gray-50 text-gray-500 text-sm mr-1 menu-edit-button">
     수정
   </button>
-  <button
-    type="button"
-    class="bg-gray-50 text-gray-500 text-sm menu-remove-button"
-  >
+  <button type="button" class="bg-gray-50 text-gray-500 text-sm menu-remove-button">
     삭제
   </button>
 </li>
